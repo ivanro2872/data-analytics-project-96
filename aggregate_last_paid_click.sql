@@ -101,7 +101,6 @@ left join marketing_data as m
         and a.utm_source = m.utm_source
         and a.utm_medium = m.utm_medium
         and a.utm_campaign = m.utm_campaign
-where a.leads_count > 0
 order by
     revenue desc nulls last,
     a.visit_date asc,
