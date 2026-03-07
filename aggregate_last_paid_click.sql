@@ -46,7 +46,6 @@ aggregated_data as (
     from visitors_with_leads
     where
         rn = 1
-        and lead_id is not null
     group by
         utm_source,
         utm_medium,
